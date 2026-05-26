@@ -5,12 +5,5 @@
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#1f7a1f",
-  "description": "Premium goat farm in Kurumalai Tamil Nadu",
-  "icons": [
-    {
-      "src": "hero.jpeg",
-      "sizes": "192x192",
-      "type": "image/jpeg"
-    }
-  ]
+  "description": "Premium goat farm in Kurumalai Tamil Nadu"
 }
