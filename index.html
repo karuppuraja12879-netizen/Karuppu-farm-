@@ -10,7 +10,7 @@
 
 <header class="hero">
 <nav>
-<h1 id="brand">Karuppu Goat Farm</h1>
+<h1>Karuppu Goat Farm</h1>
 
 <div class="nav-right">
 <select id="languageSwitcher" onchange="changeLanguage()">
@@ -19,17 +19,17 @@
 </select>
 
 <div>
-<a href="#about" class="navText">About</a>
-<a href="#gallery" class="navText">Gallery</a>
-<a href="#contact" class="navText">Contact</a>
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
 </div>
 </div>
 </nav>
 
 <div class="hero-content">
 <h2 id="heroTitle">Healthy Farm Raised Goats</h2>
-<p id="heroSubtitle">Premium goats directly from our farm.</p>
-<a class="btn" href="https://wa.me/919384760816" id="whatsappBtn">WhatsApp Us</a>
+<p id="heroSubtitle">Premium quality goats directly from our farm.</p>
+<a class="btn" href="https://wa.me/919500520781" id="whatsappBtn">WhatsApp Us</a>
 </div>
 </header>
 
@@ -54,17 +54,37 @@ Welcome to Karuppu Goat Farm. We raise healthy goats using natural feeding metho
 <h2 id="contactTitle">Contact Us</h2>
 
 <div class="contact-box">
-<p><strong>Phone:</strong> 9384760816 / 9944648253</p>
+<p><strong>Phone:</strong> 9500520781</p>
 <p><strong>Email:</strong> karuppuraja12879@gmail.com</p>
 <p><strong>Instagram:</strong> @karuppugoatfarm</p>
+<p><strong>Address:</strong> 36/6 East Street, Kurumalai</p>
+<p><strong>PIN Code:</strong> 628714</p>
 </div>
+
+<div class="map-box">
+<iframe
+src="https://maps.google.com/maps?q=Kurumalai&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="300"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+</div>
+
 </section>
+
+<a class="whatsapp" href="https://wa.me/919500520781">WhatsApp</a>
+
+<footer>
+<p>© 2026 Karuppu Goat Farm</p>
+</footer>
 
 <script>
 const translations = {
 en: {
 heroTitle: "Healthy Farm Raised Goats",
-heroSubtitle: "Premium goats directly from our farm.",
+heroSubtitle: "Premium quality goats directly from our farm.",
 aboutTitle: "About Us",
 aboutText: "Welcome to Karuppu Goat Farm. We raise healthy goats using natural feeding methods.",
 galleryTitle: "Farm Gallery",
@@ -73,9 +93,9 @@ whatsappBtn: "WhatsApp Us"
 },
 ta: {
 heroTitle: "ஆரோக்கியமான பண்ணை ஆடுகள்",
-heroSubtitle: "எங்கள் பண்ணையிலிருந்து நேரடி தரமான ஆடுகள்.",
+heroSubtitle: "எங்கள் பண்ணையிலிருந்து தரமான ஆடுகள்.",
 aboutTitle: "எங்களை பற்றி",
-aboutText: "கருப்பு கோட் ஃபார்மிற்கு வரவேற்கிறோம். இயற்கை முறையில் ஆரோக்கியமான ஆடுகளை வளர்க்கிறோம்.",
+aboutText: "கருப்பு கோட் ஃபார்மிற்கு வரவேற்கிறோம்.",
 galleryTitle: "பண்ணை புகைப்படங்கள்",
 contactTitle: "தொடர்பு கொள்ள",
 whatsappBtn: "வாட்ஸ்அப்பில் தொடர்பு கொள்ள"
@@ -87,7 +107,7 @@ const lang = document.getElementById("languageSwitcher").value;
 
 for (const key in translations[lang]) {
 const element = document.getElementById(key);
-if (element) {
+if(element){
 element.innerText = translations[lang][key];
 }
 }
