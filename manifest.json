@@ -1,0 +1,16 @@
+{
+  "name": "Karuppu Goat Farm",
+  "short_name": "Karuppu Farm",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1f7a1f",
+  "description": "Premium goat farm in Kurumalai Tamil Nadu",
+  "icons": [
+    {
+      "src": "hero.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    }
+  ]
+}
