@@ -4,40 +4,45 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Karuppu Goat Farm</title>
-<meta name="description" content="Healthy farm-raised goats in Tamil Nadu">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="hero">
 <nav>
-<h1>Karuppu Goat Farm</h1>
+<h1 id="brand">Karuppu Goat Farm</h1>
+
+<div class="nav-right">
+<select id="languageSwitcher" onchange="changeLanguage()">
+<option value="en">English</option>
+<option value="ta">தமிழ்</option>
+</select>
+
 <div>
-<a href="#about">About</a>
-<a href="#gallery">Gallery</a>
-<a href="#contact">Contact</a>
+<a href="#about" class="navText">About</a>
+<a href="#gallery" class="navText">Gallery</a>
+<a href="#contact" class="navText">Contact</a>
+</div>
 </div>
 </nav>
 
 <div class="hero-content">
-<h2>Healthy Farm Raised Goats</h2>
-<p>Premium goats directly from our farm.</p>
-<a class="btn" href="https://wa.me/919384760816">WhatsApp Us</a>
+<h2 id="heroTitle">Healthy Farm Raised Goats</h2>
+<p id="heroSubtitle">Premium goats directly from our farm.</p>
+<a class="btn" href="https://wa.me/919384760816" id="whatsappBtn">WhatsApp Us</a>
 </div>
 </header>
 
 <section class="section" id="about">
-<h2>About Us</h2>
-<p>Welcome to Karuppu Goat Farm. We raise healthy goats using natural feeding methods.</p>
-
-<div class="lang-box">
-<h3>தமிழ்</h3>
-<p>கருப்பு கோட் ஃபார்மிற்கு வரவேற்கிறோம்.</p>
-</div>
+<h2 id="aboutTitle">About Us</h2>
+<p id="aboutText">
+Welcome to Karuppu Goat Farm. We raise healthy goats using natural feeding methods.
+</p>
 </section>
 
 <section class="section gray" id="gallery">
-<h2>Farm Gallery</h2>
+<h2 id="galleryTitle">Farm Gallery</h2>
+
 <div class="gallery">
 <img src="gallery1.png">
 <img src="gallery2.png">
@@ -45,36 +50,8 @@
 </div>
 </section>
 
-<section class="section">
-<h2>Our Services</h2>
-
-<div class="cards">
-<div class="card">
-<h3>Breeding Goats</h3>
-<p>Healthy breeding goats available.</p>
-</div>
-
-<div class="card">
-<h3>Baby Goats</h3>
-<p>Strong and healthy young goats.</p>
-</div>
-
-<div class="card">
-<h3>Farm Direct Sales</h3>
-<p>Direct contact with farm owners.</p>
-</div>
-</div>
-</section>
-
-<section class="section gray" id="contact">
-<h2>Contact Us</h2>
-
-<form class="contact-form">
-<input type="text" placeholder="Your Name">
-<input type="tel" placeholder="Phone Number">
-<textarea placeholder="Your Requirement"></textarea>
-<button type="submit">Send Enquiry</button>
-</form>
+<section class="section" id="contact">
+<h2 id="contactTitle">Contact Us</h2>
 
 <div class="contact-box">
 <p><strong>Phone:</strong> 9384760816 / 9944648253</p>
@@ -83,11 +60,39 @@
 </div>
 </section>
 
-<a class="whatsapp" href="https://wa.me/919384760816">WhatsApp</a>
+<script>
+const translations = {
+en: {
+heroTitle: "Healthy Farm Raised Goats",
+heroSubtitle: "Premium goats directly from our farm.",
+aboutTitle: "About Us",
+aboutText: "Welcome to Karuppu Goat Farm. We raise healthy goats using natural feeding methods.",
+galleryTitle: "Farm Gallery",
+contactTitle: "Contact Us",
+whatsappBtn: "WhatsApp Us"
+},
+ta: {
+heroTitle: "ஆரோக்கியமான பண்ணை ஆடுகள்",
+heroSubtitle: "எங்கள் பண்ணையிலிருந்து நேரடி தரமான ஆடுகள்.",
+aboutTitle: "எங்களை பற்றி",
+aboutText: "கருப்பு கோட் ஃபார்மிற்கு வரவேற்கிறோம். இயற்கை முறையில் ஆரோக்கியமான ஆடுகளை வளர்க்கிறோம்.",
+galleryTitle: "பண்ணை புகைப்படங்கள்",
+contactTitle: "தொடர்பு கொள்ள",
+whatsappBtn: "வாட்ஸ்அப்பில் தொடர்பு கொள்ள"
+}
+};
 
-<footer>
-<p>© 2026 Karuppu Goat Farm</p>
-</footer>
+function changeLanguage() {
+const lang = document.getElementById("languageSwitcher").value;
+
+for (const key in translations[lang]) {
+const element = document.getElementById(key);
+if (element) {
+element.innerText = translations[lang][key];
+}
+}
+}
+</script>
 
 </body>
 </html>
