@@ -4,27 +4,226 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Karuppu Goat Farm</title>
+
+<meta name="description" content="Karuppu Goat Farm - Healthy Kanni Adu, Black and local breed goats in Kurumalai Tamil Nadu.">
+<meta name="keywords" content="Goat Farm Tamil Nadu,Kanni Adu,Black Goat,Local Goat Breeds,Farm Visit,Bulk Goat Orders">
+<meta property="og:title" content="Karuppu Goat Farm">
+<meta property="og:description" content="Healthy farm raised goats directly from our farm">
+<meta property="og:image" content="hero.jpeg">
+
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<section class="section">
+<div class="popup" id="popup">
+<div class="popup-content">
+<h2>Quick Enquiry</h2>
+<input type="text" placeholder="Your Name">
+<input type="tel" placeholder="Phone Number">
+<textarea placeholder="Requirement"></textarea>
+<button onclick="closePopup()">Submit</button>
+</div>
+</div>
+
+<header class="hero">
+<nav>
 <h1>Karuppu Goat Farm</h1>
 
+<div class="nav-right">
+<select id="languageSwitcher" onchange="changeLanguage()">
+<option value="en">English</option>
+<option value="ta">தமிழ்</option>
+</select>
+
+<div>
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<a href="#services">Services</a>
+<a href="#reviews">Reviews</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+
+<div class="hero-content">
+<h2 id="heroTitle">Healthy Farm Raised Goats</h2>
+<p id="heroSubtitle">Premium quality goats directly from our farm in Kurumalai.</p>
+
+<div class="button-group">
+<a class="btn pulse" href="tel:9500520781">Call Now</a>
+<a class="btn green" href="https://wa.me/919944648253">WhatsApp Order</a>
+<a class="btn dark" onclick="openPopup()">Enquiry</a>
+</div>
+</div>
+</header>
+
+<section class="section" id="about">
 <h2>Founder</h2>
-<p><strong>Karuppagaraja</strong></p>
+<p><strong>Karuppagaraja</strong> — Founder</p><p><strong>Petchimuthu</strong> — Owner</p>
 
-<h2>Owner</h2>
-<p><strong>Petchimuthu</strong></p>
+<h2>About Us</h2>
+<p>
+Karuppu Goat Farm specializes in healthy Kanni Adu, Black goats and local breeds with direct farm sales and bulk booking support.
+</p>
 
-<h2>Contact Numbers</h2>
-<p>Main Number: 9944648253</p>
-<p>Second Number: 9500520781</p>
+<div class="info-grid">
+<div class="info-card">
+<h3>Business Hours</h3>
+<p>24/7 Open</p>
+</div>
 
-<a href="tel:9944648253">Call Main Number</a><br><br>
-<a href="https://wa.me/919944648253">WhatsApp Owner</a>
-
+<div class="info-card">
+<h3>Available Breeds</h3>
+<p>Kanni Adu</p>
+<p>Black Goat</p>
+<p>Local Breeds</p>
+</div>
+</div>
 </section>
+
+<section class="section gray" id="services">
+<h2>Services</h2>
+
+<div class="cards">
+<div class="card"><h3>Breeding</h3></div>
+<div class="card"><h3>Farm Visits</h3></div>
+<div class="card"><h3>Bulk Orders</h3></div>
+<div class="card"><h3>Festival Bookings</h3></div>
+<div class="card"><h3>Direct Farm Purchase</h3></div>
+</div>
+</section>
+
+<section class="section" id="gallery">
+<h2>Farm Gallery</h2>
+
+<div class="gallery">
+<img src="gallery1.jpeg" class="gallery-img">
+<img src="gallery2.jpeg" class="gallery-img">
+<img src="gallery3.jpeg" class="gallery-img">
+<img src="gallery4.jpeg" class="gallery-img">
+<img src="gallery5.jpeg" class="gallery-img">
+<img src="gallery6.jpeg" class="gallery-img">
+<img src="gallery7.jpeg" class="gallery-img">
+<img src="gallery8.jpeg" class="gallery-img">
+<img src="gallery9.jpeg" class="gallery-img">
+<img src="gallery10.jpeg" class="gallery-img">
+<img src="gallery11.jpeg" class="gallery-img">
+<img src="gallery12.jpeg" class="gallery-img">
+</div>
+</section>
+
+<section class="section gray" id="reviews">
+<h2>Customer Reviews</h2>
+
+<div class="review-box">
+<p>⭐ Healthy goats and trusted service.</p>
+<p>⭐ Very good farm quality.</p>
+<p>⭐ Good pricing and support.</p>
+<p>⭐ Clean farm and healthy goats.</p>
+<p>⭐ Recommended for bulk orders.</p>
+</div>
+
+<details>
+<summary>Show All Reviews</summary>
+
+<div class="review-box">
+<p>⭐ Good experience.</p>
+<p>⭐ Delivery support available.</p>
+<p>⭐ Nice local breeds.</p>
+<p>⭐ Farm owner friendly.</p>
+</div>
+</details>
+
+<textarea placeholder="Write your review"></textarea>
+<button class="review-btn">Submit Review</button>
+</section>
+
+<section class="section" id="faq">
+<h2>FAQ</h2>
+
+<div class="faq">
+<h3>Goat price?</h3>
+<p>Prices vary based on breed and weight.</p>
+
+<h3>Delivery available?</h3>
+<p>Yes, delivery support available.</p>
+
+<h3>Bulk order?</h3>
+<p>Yes, contact us directly for bulk orders.</p>
+
+<h3>Farm visit allowed?</h3>
+<p>Yes, visitors are welcome.</p>
+</div>
+</section>
+
+<section class="section gray" id="future">
+<h2>Future Upgrades</h2>
+
+<div class="cards">
+<div class="card">Admin Dashboard</div>
+<div class="card">Online Booking</div>
+<div class="card">Ecommerce Goat Sales</div>
+<div class="card">Payment Integration</div>
+<div class="card">Inventory Management</div>
+<div class="card">Multilingual Full Site</div>
+<div class="card">Dark Mode</div>
+<div class="card">Video Reels Section</div>
+</div>
+</section>
+
+<section class="section" id="contact">
+<h2>Contact Us</h2>
+
+<p><strong>Phone:</strong> 9944648253 / 9500520781</p>
+<p><strong>Email:</strong> karuppuraja12879@gmail.com</p>
+<p><strong>Instagram:</strong> Coming Soon</p>
+<p><strong>Address:</strong> 36/6 East Street, Kurumalai - 628714</p>
+
+<div class="map-box">
+<iframe
+src="https://maps.google.com/maps?q=36/6%20east%20street%20kurumalai&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="320"
+style="border:0;"
+loading="lazy">
+</iframe>
+</div>
+</section>
+
+<a class="floating-btn call" href="tel:9500520781">Call</a>
+<a class="floating-btn whatsapp" href="https://wa.me/919944648253">WhatsApp</a>
+
+<footer>
+<p>© 2026 Karuppu Goat Farm</p>
+</footer>
+
+<script>
+function openPopup(){
+document.getElementById('popup').style.display='flex';
+}
+
+function closePopup(){
+document.getElementById('popup').style.display='none';
+}
+
+const translations = {
+en: {
+heroTitle: "Healthy Farm Raised Goats",
+heroSubtitle: "Premium quality goats directly from our farm in Kurumalai."
+},
+ta: {
+heroTitle: "ஆரோக்கியமான பண்ணை ஆடுகள்",
+heroSubtitle: "குருமலையில் எங்கள் பண்ணையிலிருந்து தரமான ஆடுகள்."
+}
+};
+
+function changeLanguage(){
+const lang=document.getElementById("languageSwitcher").value;
+document.getElementById("heroTitle").innerText=translations[lang].heroTitle;
+document.getElementById("heroSubtitle").innerText=translations[lang].heroSubtitle;
+}
+</script>
 
 </body>
 </html>
