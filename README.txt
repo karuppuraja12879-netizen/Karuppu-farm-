@@ -1,2 +1,2 @@
-Upload all files directly to GitHub repository root.
-Netlify auto-deploy will update automatically.
+Gallery horizontal slider update package.
+Upload your three new goat photos as gallery13.jpeg, gallery14.jpeg, gallery15.jpeg.
