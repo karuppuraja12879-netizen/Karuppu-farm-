@@ -1,244 +1,251 @@
- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- Google AdSense -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Karuppu Goat Farm in Kurumalai, Tamil Nadu. Explore Kanni Adu, black goats and local breeds. Contact us for farm visits and bulk orders.">
+    <meta name="keywords" content="Karuppu Goat Farm, Goat Farm Tamil Nadu, Kanni Adu, Black Goat, Local Goat Breeds, Kurumalai Goat Farm, Bulk Goat Orders">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Karuppu Goat Farm">
+    <meta property="og:description" content="Healthy farm-raised goats directly from our farm in Kurumalai, Tamil Nadu.">
+    <meta property="og:image" content="https://karuppu-goat-farm.netlify.app/hero.jpeg">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://karuppu-goat-farm.netlify.app/">
+    <link rel="stylesheet" href="style.css">
+    <title>Karuppu Goat Farm | Kurumalai, Tamil Nadu</title>
+
+    <!-- Google AdSense Auto ads. Keep this script in the head. -->
     <script async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4963201380734459"
-        crossorigin="anonymous">
-    </script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Karuppu Goat Farm</title>
-<meta name="description" content="Karuppu Goat Farm - Healthy Kanni Adu, Black and local breed goats in Kurumalai Tamil Nadu.">
-<meta name="keywords" content="Goat Farm Tamil Nadu,Kanni Adu,Black Goat,Local Goat Breeds,Farm Visit,Bulk Goat Orders">
-<meta property="og:title" content="Karuppu Goat Farm">
-<meta property="og:description" content="Healthy farm raised goats directly from our farm">
-<meta property="og:image" content="hero.jpeg">
-
-<link rel="stylesheet" href="style.css">
+        crossorigin="anonymous"></script>
 </head>
 <body>
-
-<div class="popup" id="popup">
-<div class="popup-content">
-<h2>Quick Enquiry</h2>
-<input type="text" placeholder="Your Name">
-<input type="tel" placeholder="Phone Number">
-<textarea placeholder="Requirement"></textarea>
-<button onclick="closePopup()">Submit</button>
-</div>
+<div class="popup" id="popup" aria-hidden="true">
+    <div class="popup-content" role="dialog" aria-modal="true" aria-labelledby="enquiryTitle">
+        <button class="popup-close" type="button" onclick="closePopup()" aria-label="Close enquiry form">×</button>
+        <h2 id="enquiryTitle">Quick Enquiry</h2>
+        <p class="form-help">Enter your details. WhatsApp will open with your enquiry message ready to send.</p>
+        <form id="enquiryForm">
+            <label for="customerName">Your name</label>
+            <input id="customerName" name="name" type="text" autocomplete="name" placeholder="Your Name" required maxlength="80">
+            <label for="customerPhone">Phone number</label>
+            <input id="customerPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Phone Number" required maxlength="20">
+            <label for="customerRequirement">Requirement</label>
+            <textarea id="customerRequirement" name="requirement" placeholder="Goat breed, quantity, farm visit, etc." required maxlength="1000"></textarea>
+            <button class="submit-button" type="submit">Continue to WhatsApp</button>
+        </form>
+    </div>
 </div>
 
 <header class="hero">
-<nav>
-<h1>Karuppu Goat Farm</h1>
+    <nav>
+        <h1>Karuppu Goat Farm</h1>
+        <div class="nav-right">
+            <select id="languageSwitcher" aria-label="Choose language" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="ta">தமிழ்</option>
+            </select>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#services">Services</a>
+                <a href="#reviews">Google Reviews</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-<div class="nav-right">
-<select id="languageSwitcher" onchange="changeLanguage()">
-<option value="en">English</option>
-<option value="ta">தமிழ்</option>
-</select>
-
-<div>
-<a href="#about">About</a>
-<a href="#gallery">Gallery</a>
-<a href="#services">Services</a>
-<a href="#reviews">Reviews</a>
-<a href="#faq">FAQ</a>
-<a href="#contact">Contact</a>
-</div>
-</div>
-</nav>
-
-<div class="hero-content">
-<h2 id="heroTitle">Healthy Farm Raised Goats</h2>
-<p id="heroSubtitle">Premium quality goats directly from our farm in Kurumalai.</p>
-
-<div class="button-group">
-<a class="btn pulse" href="tel:9500520781">Call Now</a>
-<a class="btn green" href="https://wa.me/919944648253">WhatsApp Order</a>
-<a class="btn dark" onclick="openPopup()">Enquiry</a>
-</div>
-</div>
+    <div class="hero-content">
+        <h2 id="heroTitle">Healthy Farm Raised Goats</h2>
+        <p id="heroSubtitle">Premium quality goats directly from our farm in Kurumalai.</p>
+        <div class="button-group">
+            <a class="btn pulse" href="tel:9500520781">Call Now</a>
+            <a class="btn green" href="https://wa.me/919944648253" target="_blank" rel="noopener noreferrer">WhatsApp Order</a>
+            <button class="btn dark" type="button" onclick="openPopup()">Enquiry</button>
+        </div>
+    </div>
 </header>
 
+<main>
 <section class="section" id="about">
-<h2>Founder</h2>
-<p><strong>Karuppagaraja</strong> — Founder</p><p><strong>Petchimuthu</strong> — Owner</p>
-
-<h2>About Us</h2>
-<p>
-Karuppu Goat Farm specializes in healthy Kanni Adu, Black goats and local breeds with direct farm sales and bulk booking support.
-</p>
-
-<div class="info-grid">
-<div class="info-card">
-<h3>Business Hours</h3>
-<p>24/7 Open</p>
-</div>
-
-<div class="info-card">
-<h3>Available Breeds</h3>
-<p>Kanni Adu</p>
-<p>Black Goat</p>
-<p>Local Breeds</p>
-</div>
-</div>
+    <h2>About Karuppu Goat Farm</h2>
+    <p><strong>Founder:</strong> Karuppagaraja</p>
+    <p><strong>Owner:</strong> Petchimuthu</p>
+    <p>Karuppu Goat Farm specializes in healthy Kanni Adu, black goats and local breeds, with direct farm sales and bulk booking support.</p>
+    <div class="info-grid">
+        <div class="info-card">
+            <h3>Business Hours</h3>
+            <p>Please call ahead to confirm availability and arrange your visit.</p>
+        </div>
+        <div class="info-card">
+            <h3>Available Breeds</h3>
+            <p>Kanni Adu</p><p>Black Goat</p><p>Local Breeds</p>
+        </div>
+    </div>
 </section>
 
 <section class="section gray" id="services">
-<h2>Services</h2>
-
-<div class="cards">
-<div class="card"><h3>Breeding</h3></div>
-<div class="card"><h3>Farm Visits</h3></div>
-<div class="card"><h3>Bulk Orders</h3></div>
-<div class="card"><h3>Festival Bookings</h3></div>
-<div class="card"><h3>Direct Farm Purchase</h3></div>
-</div>
+    <h2>Services</h2>
+    <div class="cards">
+        <div class="card"><h3>Breeding</h3></div>
+        <div class="card"><h3>Farm Visits</h3></div>
+        <div class="card"><h3>Bulk Orders</h3></div>
+        <div class="card"><h3>Festival Bookings</h3></div>
+        <div class="card"><h3>Direct Farm Purchase</h3></div>
+    </div>
 </section>
 
 <section class="section" id="gallery">
-<h2>Farm Gallery</h2>
-
-<div class="gallery">
-<img src="gallery1.jpeg" class="gallery-img">
-<img src="gallery2.jpeg" class="gallery-img">
-<img src="gallery3.jpeg" class="gallery-img">
-<img src="gallery4.jpeg" class="gallery-img">
-<img src="gallery5.jpeg" class="gallery-img">
-<img src="gallery6.jpeg" class="gallery-img">
-<img src="gallery7.jpeg" class="gallery-img">
-<img src="gallery8.jpeg" class="gallery-img">
-<img src="gallery9.jpeg" class="gallery-img">
-<img src="gallery10.jpeg" class="gallery-img">
-<img src="gallery11.jpeg" class="gallery-img">
-<img src="gallery12.jpeg" class="gallery-img">
-</div>
+    <h2>Farm Gallery</h2>
+    <div class="gallery">
+        <img src="gallery1.jpeg" class="gallery-img" alt="Goat at Karuppu Goat Farm" loading="lazy">
+        <img src="gallery2.jpeg" class="gallery-img" alt="Goat at Karuppu Goat Farm" loading="lazy">
+        <img src="gallery3.jpeg" class="gallery-img" alt="Goat at Karuppu Goat Farm" loading="lazy">
+        <img src="gallery4.jpeg" class="gallery-img" alt="Goat at Karuppu Goat Farm" loading="lazy">
+        <img src="gallery5.jpeg" class="gallery-img" alt="Goat at Karuppu Goat Farm" loading="lazy">
+        <img src="gallery6.jpeg" class="gallery-img" alt="Goat at Karuppu Goat Farm" loading="lazy">
+        <img src="gallery7.jpeg" class="gallery-img" alt="Goat at Karuppu Goat Farm" loading="lazy">
+        <img src="gallery8.jpeg" class="gallery-img" alt="Goat at Karuppu Goat Farm" loading="lazy">
+        <img src="gallery9.jpeg" class="gallery-img" alt="Goat at Karuppu Goat Farm" loading="lazy">
+        <img src="gallery10.jpeg" class="gallery-img" alt="Goat at Karuppu Goat Farm" loading="lazy">
+        <img src="gallery11.jpeg" class="gallery-img" alt="Goat at Karuppu Goat Farm" loading="lazy">
+        <img src="gallery12.jpeg" class="gallery-img" alt="Goat at Karuppu Goat Farm" loading="lazy">
+    </div>
 </section>
 
 <section class="section gray" id="reviews">
-<h2>Customer Reviews</h2>
-
-<div class="review-box">
-<p>⭐ Healthy goats and trusted service.</p>
-<p>⭐ Very good farm quality.</p>
-<p>⭐ Good pricing and support.</p>
-<p>⭐ Clean farm and healthy goats.</p>
-<p>⭐ Recommended for bulk orders.</p>
-</div>
-
-<details>
-<summary>Show All Reviews</summary>
-
-<div class="review-box">
-<p>⭐ Good experience.</p>
-<p>⭐ Delivery support available.</p>
-<p>⭐ Nice local breeds.</p>
-<p>⭐ Farm owner friendly.</p>
-</div>
-</details>
-
-<textarea placeholder="Write your review"></textarea>
-<button class="review-btn">Submit Review</button>
+    <h2>Google Customer Reviews</h2>
+    <div class="google-review-card">
+        <div class="google-mark" aria-hidden="true">G</div>
+        <div>
+            <h3>See customer feedback on Google</h3>
+            <p>Read customer reviews on our Google Business Profile. If you have visited or purchased from our farm, you can also share your honest experience there.</p>
+            <a class="google-review-button" href="https://www.google.com/maps/place/Karuppu+goat+farm/@9.0649607,77.8587209,17z/data=!3m1!4b1!4m6!3m5!1s0x3b06ab7e6be1def9:0x5f343b9a85c54661!8m2!3d9.0649607!4d77.8587209!16s%2Fg%2F11z7z4vtqs?entry=ttu&g_ep=EgoyMDI2MTExMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">View Google reviews &amp; write a review</a>
+            <a class="google-review-button" href="https://share.google/01hT4y7Sej90FeYbx" target="_blank" rel="noopener noreferrer" style="margin-top:10px;">Share Karuppu Goat Farm</a>
+        </div>
+    </div>
+    <p class="review-note">Reviews are opened directly on Google. This website does not publish or invent customer testimonials.</p>
 </section>
 
 <section class="section" id="faq">
-<h2>FAQ</h2>
-
-<div class="faq">
-<h3>Goat price?</h3>
-<p>Prices vary based on breed and weight.</p>
-
-<h3>Delivery available?</h3>
-<p>Yes, delivery support available.</p>
-
-<h3>Bulk order?</h3>
-<p>Yes, contact us directly for bulk orders.</p>
-
-<h3>Farm visit allowed?</h3>
-<p>Yes, visitors are welcome.</p>
-</div>
+    <h2>FAQ</h2>
+    <div class="faq">
+        <h3>Goat price?</h3>
+        <p>Prices vary based on breed and weight. Contact us for current availability and pricing.</p>
+        <h3>Delivery available?</h3>
+        <p>Contact us to discuss delivery availability for your location.</p>
+        <h3>Bulk order?</h3>
+        <p>Yes, contact us directly for bulk orders.</p>
+        <h3>Farm visit allowed?</h3>
+        <p>Please call ahead to arrange a farm visit.</p>
+    </div>
 </section>
 
 <section class="section gray" id="future">
-<h2>Future Upgrades</h2>
-
-<div class="cards">
-<div class="card">Admin Dashboard</div>
-<div class="card">Online Booking</div>
-<div class="card">Ecommerce Goat Sales</div>
-<div class="card">Payment Integration</div>
-<div class="card">Inventory Management</div>
-<div class="card">Multilingual Full Site</div>
-<div class="card">Dark Mode</div>
-<div class="card">Video Reels Section</div>
-</div>
+    <h2>Future Upgrades</h2>
+    <div class="cards">
+        <div class="card">Admin Dashboard</div>
+        <div class="card">Online Booking</div>
+        <div class="card">Ecommerce Goat Sales</div>
+        <div class="card">Payment Integration</div>
+        <div class="card">Inventory Management</div>
+        <div class="card">Multilingual Full Site</div>
+        <div class="card">Dark Mode</div>
+        <div class="card">Video Reels Section</div>
+    </div>
 </section>
 
 <section class="section" id="contact">
-<h2>Contact Us</h2>
-
-<p><strong>Phone:</strong> 9944648253 / 9500520781</p>
-<p><strong>Email:</strong> karuppuraja12879@gmail.com</p>
-<p>
-    <strong>Instagram:</strong>
-    <a href="https://www.instagram.com/karuppu_goat_farm_kurumalai/"
-       target="_blank"
-       rel="noopener noreferrer">
-       @karuppu_goat_farm_kurumalai
-    </a>
-</p>
-
-<p><strong>Address:</strong> 36/6 East Street, Kurumalai - 628714</p>
-
-<div class="map-box">
-<iframe
-src="https://maps.google.com/maps?q=36/6%20east%20street%20kurumalai&t=&z=13&ie=UTF8&iwloc=&output=embed"
-width="100%"
-height="320"
-style="border:0;"
-loading="lazy">
-</iframe>
-</div>
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> <a href="tel:9944648253">9944648253</a> / <a href="tel:9500520781">9500520781</a></p>
+    <p><strong>Email:</strong> <a href="mailto:karuppuraja12879@gmail.com">karuppuraja12879@gmail.com</a></p>
+    <p><strong>Instagram:</strong> <a href="https://www.instagram.com/karuppu_goat_farm_kurumalai/" target="_blank" rel="noopener noreferrer">@karuppu_goat_farm_kurumalai</a></p>
+    <p><strong>Address:</strong> 36/6 East Street, Kurumalai - 628714, Tamil Nadu, India</p>
+    <div class="map-box">
+        <iframe title="Karuppu Goat Farm location map"
+            src="https://maps.google.com/maps?q=9.0649607%2C77.8587209&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+            width="100%" height="320" style="border:0;" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 </section>
+</main>
 
-<a class="floating-btn call" href="tel:9500520781">Call</a>
-<a class="floating-btn whatsapp" href="https://wa.me/919944648253">WhatsApp</a>
+<a class="floating-btn call" href="tel:9500520781" aria-label="Call Karuppu Goat Farm">Call</a>
+<a class="floating-btn whatsapp" href="https://wa.me/919944648253" target="_blank" rel="noopener noreferrer">WhatsApp</a>
 
 <footer>
-<p>© 2026 Karuppu Goat Farm</p>
+    <p>© 2026 Karuppu Goat Farm</p>
+    <p><a href="privacy-policy.html">Privacy Policy</a> <span aria-hidden="true">·</span> <a href="mailto:karuppuraja12879@gmail.com">Contact</a></p>
 </footer>
 
 <script>
-function openPopup(){
-document.getElementById('popup').style.display='flex';
+const WHATSAPP_NUMBER = "919944648253";
+
+function openPopup() {
+    const popup = document.getElementById("popup");
+    popup.style.display = "flex";
+    popup.setAttribute("aria-hidden", "false");
+    document.getElementById("customerName").focus();
 }
 
-function closePopup(){
-document.getElementById('popup').style.display='none';
+function closePopup() {
+    const popup = document.getElementById("popup");
+    popup.style.display = "none";
+    popup.setAttribute("aria-hidden", "true");
 }
+
+document.getElementById("popup").addEventListener("click", function (event) {
+    if (event.target === this) closePopup();
+});
+
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") closePopup();
+});
+
+document.getElementById("enquiryForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById("customerName").value.trim();
+    const phone = document.getElementById("customerPhone").value.trim();
+    const requirement = document.getElementById("customerRequirement").value.trim();
+
+    if (!name || !phone || !requirement) {
+        alert("Please complete all enquiry fields.");
+        return;
+    }
+
+    const message = [
+        "Hello Karuppu Goat Farm,",
+        "",
+        "I would like to make an enquiry.",
+        "Name: " + name,
+        "Phone: " + phone,
+        "Requirement: " + requirement
+    ].join("\n");
+
+    const whatsappURL = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
+    window.open(whatsappURL, "_blank", "noopener,noreferrer");
+    closePopup();
+    this.reset();
+});
 
 const translations = {
-en: {
-heroTitle: "Healthy Farm Raised Goats",
-heroSubtitle: "Premium quality goats directly from our farm in Kurumalai."
-},
-ta: {
-heroTitle: "ஆரோக்கியமான பண்ணை ஆடுகள்",
-heroSubtitle: "குருமலையில் எங்கள் பண்ணையிலிருந்து தரமான ஆடுகள்."
-}
+    en: {
+        heroTitle: "Healthy Farm Raised Goats",
+        heroSubtitle: "Premium quality goats directly from our farm in Kurumalai."
+    },
+    ta: {
+        heroTitle: "ஆரோக்கியமான பண்ணை ஆடுகள்",
+        heroSubtitle: "குருமலையில் எங்கள் பண்ணையிலிருந்து தரமான ஆடுகள்."
+    }
 };
 
-function changeLanguage(){
-const lang=document.getElementById("languageSwitcher").value;
-document.getElementById("heroTitle").innerText=translations[lang].heroTitle;
-document.getElementById("heroSubtitle").innerText=translations[lang].heroSubtitle;
+function changeLanguage() {
+    const language = document.getElementById("languageSwitcher").value;
+    document.getElementById("heroTitle").textContent = translations[language].heroTitle;
+    document.getElementById("heroSubtitle").textContent = translations[language].heroSubtitle;
 }
 </script>
-
 </body>
 </html>
